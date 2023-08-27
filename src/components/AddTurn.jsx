@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 const AddTurn = ({ turnList, setTurnList, setSection }) => {
 
+    const [minDate, setMinDate] = useState(new Date().toISOString().split('T')[0]);
+
     const [turn, setTurn] = useState({
         date: "",
         hour: "",
@@ -92,7 +94,7 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
                 <div className='dataTurnContainer'>
                     <label>
                         Fecha:
-                        <input type="date" onChange={dateHandler} />
+                        <input type="date" onChange={dateHandler} min={minDate}/>
                     </label>
                     <label>
                         Hora:
