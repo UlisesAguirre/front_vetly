@@ -1,0 +1,42 @@
+.medicTurnsContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonCardContainer {
+    margin: 1em;
+}
+
+.buttonCardContainer:hover .cardContainer {
+    transition: .5s;
+    background-color: lightgray;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 4em 2em;
+    background-color: lightcyan;
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cardContainer img {
+    width: 10em;
+}
+
+.cardContainer h1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}

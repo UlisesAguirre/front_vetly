@@ -1,0 +1,48 @@
+.addTurnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background-color: lightcyan;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.addTurnForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataTurnContainer {
+    margin: 0 1em;
+}
+.addTurnForm label {
+    margin: .5em 0;
+    margin-left: .2em; 
+}
+
+.addTurnForm input, .addTurnForm select {
+    border: 1px solid lightgray;
+    border-radius: .5em;
+    padding: 0 .3em;
+}
+
+.dataTurnContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.addTurnContainer button {
+    border: solid 1px gray;
+    border-radius: 1em;
+    background-color: lightgray ;
+    margin: 1em 0;
+}
+
+.addTurnContainer textarea {
+    border: 1px solid lightgray;
+    height: 50%;
+}
