@@ -1,0 +1,43 @@
+.viewTurnsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table-striped tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo opcional para cambiar el color del texto en filas impares */
+.table-striped tr:nth-child(odd) td {
+    color: #333;
+    /* Cambia el color del texto a tu preferencia */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    /* Color de fondo del botón */
+    color: #1c1291;
+    /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón cuando se coloca el cursor sobre él */
+.button:hover {
+    background-color: #0056b3;
+    /* Cambia el color de fondo al pasar el cursor */
+}

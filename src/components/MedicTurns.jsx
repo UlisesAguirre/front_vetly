@@ -22,7 +22,7 @@ const MedicTurns = () => {
         <div className='medicTurnsContainer'>
             {section === "Sacar turno" ? < AddTurn setTurnList={setTurnList} turnList={turnList} setSection={setSection}/> 
             : section === "Ver mis turnos" ? 
-            <ViewTurns /> : (
+            <ViewTurns turnList = {turnList} setSection={setSection}/> : (
                 <>
                     <CardTurn name="Sacar turno" img={img.addTurn} setState={setSection}/>
                     <CardTurn name="Ver mis turnos" img={img.viewTurns} setState={setSection}/>

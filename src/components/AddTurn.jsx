@@ -8,6 +8,7 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
     const [minDate, setMinDate] = useState(new Date().toISOString().split('T')[0]);
 
     const [turn, setTurn] = useState({
+        id: Math.random().toString(),
         date: "",
         hour: "",
         petOwnerName: "",
