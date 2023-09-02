@@ -20,7 +20,7 @@ const MedicTurns = () => {
 
     return (
         <div className='medicTurnsContainer'>
-            {section === "Sacar turno" ? < AddTurn setTurnList={setTurnList} turnList={turnList} setSection={setSection}/> 
+            {section === "Sacar turno" ? < AddTurn setTurnList={setTurnList} setSection={setSection}/> 
             : section === "Ver mis turnos" ? 
             <ViewTurns turnList = {turnList} setSection={setSection}/> : (
                 <>

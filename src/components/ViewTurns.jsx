@@ -1,13 +1,21 @@
 import React from 'react'
-import TurnTable from './TurnTable';
+import TurnTableData from './TurnTableData';
 import "./ViewTurns.css"
+import { useContext } from 'react';
+import { UserContext } from '../contexts/User';
 
-const ViewTurns = ({ turnList, setSection }) => {
+const ViewTurns = ({ turnList, setSection}) => {
 
-  const sortedTurns = [...turnList].sort((a, b) => a.petName.localeCompare(b.petName));
+  const {user} = useContext(UserContext)
 
-  const turns = sortedTurns.map((turn) =>
-    <TurnTable
+  const sortedturns = user.type === "VETERINARIA" ?
+    [...turnList].sort((a, b) => a.date.localeCompare(b.date))
+    :
+    [...turnList].sort((a, b) => a.petName.localeCompare(b.petName));
+
+  const turns = sortedturns.map((turn) =>
+    <TurnTableData
+      userType= {user.type}
       key={turn.key}
       petName={turn.petName}
       petOwnerName={turn.petOwnerName}
@@ -15,8 +23,10 @@ const ViewTurns = ({ turnList, setSection }) => {
       hour={turn.hour}
       petType={turn.petType}
       reason={turn.reason}
+      profesional={turn.profesional}
     />
   )
+
   const clickHandler = (event) => {
     event.preventDefault();
     setSection("");
@@ -36,6 +46,7 @@ const ViewTurns = ({ turnList, setSection }) => {
             <th scope="col">Hora</th>
             <th scope="col">Tipo de Mascota</th>
             <th scope="col">Razón</th>
+            {userType === "CLIENTE" ? <th scope="col">Profesional</th> : null}
           </tr>
         </thead>
         <tbody>{turns}</tbody>

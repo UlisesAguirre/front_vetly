@@ -3,7 +3,7 @@ import React from 'react'
 import "./AddTurn.css"
 import { useState } from 'react';
 
-const AddTurn = ({ turnList, setTurnList, setSection }) => {
+const AddTurn = ({setTurnList, setSection }) => {
 
     const [minDate, setMinDate] = useState(new Date().toISOString().split('T')[0]);
 
@@ -14,7 +14,8 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
         petOwnerName: "",
         petName: "",
         petType: "",
-        reason: ""
+        reason: "",
+        profesional: ""
     });
 
     const dateHandler = (event) => {
@@ -65,6 +66,14 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
         }))
     };
 
+    const profesionalHandler = (event) => {
+        const profesional = event.target.value;
+        setTurn((prevData) => ({
+            ...prevData,
+            profesional: profesional
+        }))
+    }
+
 
     const submitHandler = (event) => {
         event.preventDefault();
@@ -84,7 +93,8 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
                 petOwnerName: "",
                 petName: "",
                 petType: "",
-                reason: ""
+                reason: "",
+                profesional: "",
             })
         }
     };
@@ -108,6 +118,13 @@ const AddTurn = ({ turnList, setTurnList, setSection }) => {
                         </select>
                         hs
                     </label>
+                    <label>Profesional:</label>
+                    <select onChange={profesionalHandler}>
+                            <option value="">--</option>
+                            <option value="Marcela Perez">Marcela Perez</option>
+                            <option value="Ulises Garcia">Ulises Garcia</option>
+                            <option value="Clara Martin">Clara Martin</option>
+                    </select>
                 </div>
                 <div className='dataTurnContainer'>
 
