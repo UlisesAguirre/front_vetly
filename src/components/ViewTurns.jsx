@@ -46,7 +46,7 @@ const ViewTurns = ({ turnList, setSection}) => {
             <th scope="col">Hora</th>
             <th scope="col">Tipo de Mascota</th>
             <th scope="col">Razón</th>
-            {userType === "CLIENTE" ? <th scope="col">Profesional</th> : null}
+            {user.type === "CLIENTE" ? <th scope="col">Profesional</th> : null}
           </tr>
         </thead>
         <tbody>{turns}</tbody>

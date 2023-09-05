@@ -3,9 +3,13 @@ import React from 'react'
 import "./AddTurn.css"
 import { useState } from 'react';
 
-const AddTurn = ({setTurnList, setSection }) => {
+const AddTurn = ({profesionalList, setTurnList, setSection }) => {
 
     const [minDate, setMinDate] = useState(new Date().toISOString().split('T')[0]);
+
+    const profesionalListName = profesionalList.map((profesional) => 
+        <option value={profesional.name}>{profesional.name}</option>
+    )
 
     const [turn, setTurn] = useState({
         id: Math.random().toString(),
@@ -121,9 +125,7 @@ const AddTurn = ({setTurnList, setSection }) => {
                     <label>Profesional:</label>
                     <select onChange={profesionalHandler}>
                             <option value="">--</option>
-                            <option value="Marcela Perez">Marcela Perez</option>
-                            <option value="Ulises Garcia">Ulises Garcia</option>
-                            <option value="Clara Martin">Clara Martin</option>
+                            {profesionalListName}
                     </select>
                 </div>
                 <div className='dataTurnContainer'>

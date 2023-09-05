@@ -94,5 +94,77 @@
     "familias_asignadas": null,
     "patentes_individuales_asignadas": null,
     "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 13,
+    "email": "sahk@gmail.com",
+    "tipo_usuario": "VETERINARIA",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 14,
+    "email": "sahk@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 15,
+    "email": "clararazzetto@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 16,
+    "email": "clararazzetto@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 17,
+    "email": "clararazzetto@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 18,
+    "email": "clararazzetto@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 19,
+    "email": "sahk@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 20,
+    "email": "sahk@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 21,
+    "email": "clararazzetto@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
   }
 ]
