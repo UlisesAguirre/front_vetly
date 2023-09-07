@@ -166,5 +166,29 @@
     "familias_asignadas": null,
     "patentes_individuales_asignadas": null,
     "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 22,
+    "email": "vete@gmail.com",
+    "tipo_usuario": "VETERINARIA",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 23,
+    "email": "vete@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 24,
+    "email": "client@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
   }
 ]

@@ -13,14 +13,17 @@ const CategoryPageContent = ({ category }) => {
     {
       name: "Marcela Perez",
       matricula: 333333,
+      img: "https://i.imgur.com/1jN2YuS.png"
     },
     {
       name: "Ulises Garcia",
       matricula: 2222222,
+      img: "https://i.imgur.com/viQJObn.png"
     },
     {
       name: "Clara Martin",
       matricula: 3444443,
+      img: "https://i.imgur.com/1jN2YuS.png"
     }
   ]
 
