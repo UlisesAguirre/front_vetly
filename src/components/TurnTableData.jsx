@@ -1,6 +1,6 @@
-import "./TurnTable.css"
+import "./TurnTableData.css"
 
-const TurnTable = ({id, petName, petOwnerName, date, hour, petType, reason }) => {
+const TurnTableData = ({userType, id, petName, petOwnerName, date, hour, petType, reason, profesional}) => {
     return (
         <tr key={id}>
             <td>{petName}</td>
@@ -9,8 +9,9 @@ const TurnTable = ({id, petName, petOwnerName, date, hour, petType, reason }) =>
             <td>{hour}</td>
             <td>{petType}</td>
             <td>{reason}</td>
+            {userType === "CLIENTE" ? <td>{profesional}</td> : null}
         </tr>
     )
 }
 
-export default TurnTable
+export default TurnTableData

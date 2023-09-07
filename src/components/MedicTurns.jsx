@@ -6,11 +6,9 @@ import ViewTurns from './ViewTurns'
 
 import "./MedicTurns.css"
 
-const MedicTurns = () => {
+const MedicTurns = ({profesionalList, turnList, setTurnList}) => {
 
     const [section, setSection] = useState("");
-
-    const [turnList, setTurnList] = useState([]);
 
     const img = {
         addTurn: "https://cdn-icons-png.flaticon.com/512/6325/6325028.png",
@@ -20,7 +18,7 @@ const MedicTurns = () => {
 
     return (
         <div className='medicTurnsContainer'>
-            {section === "Sacar turno" ? < AddTurn setTurnList={setTurnList} turnList={turnList} setSection={setSection}/> 
+            {section === "Sacar turno" ? < AddTurn profesionalList={profesionalList} setTurnList={setTurnList} setSection={setSection}/> 
             : section === "Ver mis turnos" ? 
             <ViewTurns turnList = {turnList} setSection={setSection}/> : (
                 <>
