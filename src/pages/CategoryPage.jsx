@@ -9,7 +9,6 @@ export default function CategoryPage({ category }) {
           {category.name}
         </h2>
       </section>
-
       <CategoryPageContent category={category} />
     </div>
 

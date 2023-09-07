@@ -94,5 +94,37 @@
     "familias_asignadas": null,
     "patentes_individuales_asignadas": null,
     "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 13,
+    "email": "cliente@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 14,
+    "email": "cliente@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 15,
+    "email": "vete@gmail.com",
+    "tipo_usuario": "VETERINARIA",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 16,
+    "email": "vete@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
   }
 ]
