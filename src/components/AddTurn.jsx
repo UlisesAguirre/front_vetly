@@ -87,7 +87,7 @@ const AddTurn = ({profesionalList, setTurnList, setSection }) => {
         if (validationInputs) {
             return alert("Por favor, complete correctamente todos los campos");
         } else {
-            setTurnList((prevTurns) => [...prevTurns, turn]);
+            setTurnList((prevTurns) => (prevTurns ? [...prevTurns, turn] : [turn]));
             alert("Turno registrado correctamente");
             setSection("")
 

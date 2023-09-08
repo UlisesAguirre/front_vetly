@@ -3,13 +3,15 @@ import MedicTurns from './MedicTurns';
 
 import "./CategoryPageContent.css"
 import ProfesionalCategory from './ProfesionalCategory';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CategoryPageContent = ({ category }) => {
 
-  const [turnList, setTurnList] = useState(JSON.parse(localStorage.getItem("turns"))); 
+  const [turnList, setTurnList] = useState(JSON.parse(localStorage.getItem("turns")));
 
-  const localTurns = localStorage.setItem("turns", JSON.stringify(turnList));
+  useEffect(() => {
+    localStorage.setItem('turns', JSON.stringify(turnList));
+  }, [turnList]);
 
   const profesionalList = [
     {
