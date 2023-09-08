@@ -14,7 +14,7 @@ const ProfesionalCategory = ({ profesionalList, turnList }) => {
           <CardTurn key={p.matricula} name={p.name} img={p.img} setState={setProfesional} />
         ))
       ) : (
-        <ViewTurns turnList={turnList} setSection={setProfesional} />
+        <ViewTurns turnList={turnList} setSection={setProfesional} profesional={profesional} />
       )}
     </div>
   );

@@ -4,21 +4,21 @@ import "./ViewTurns.css"
 import { useContext } from 'react';
 import { UserContext } from '../contexts/User';
 
-const ViewTurns = ({ setSection}) => {
+const ViewTurns = ({ setSection, profesional }) => {
 
-  const {user} = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
-  const turnList = JSON.parse(localStorage.getItem("turns")) || []; 
-  
-  const sortedturns = user.type === "VETERINARIA" ?
-    [...turnList].sort((a, b) => a.date.localeCompare(b.date))
+  const turnList = JSON.parse(localStorage.getItem("turns")) || [];
+
+ const sortedturns = user.type === "VETERINARIA" ?
+    turnList.filter((turn) => turn.profesional === profesional).sort((a, b) => a.date.localeCompare(b.date))
     :
     [...turnList].sort((a, b) => a.petName.localeCompare(b.petName));
 
   const turns = sortedturns.map((turn) =>
     <TurnTableData
-      userType= {user.type}
       key={turn.key}
+      userType={user.type}
       petName={turn.petName}
       petOwnerName={turn.petOwnerName}
       date={turn.date}
@@ -49,6 +49,7 @@ const ViewTurns = ({ setSection}) => {
             <th scope="col">Tipo de Mascota</th>
             <th scope="col">Razón</th>
             {user.type === "CLIENTE" ? <th scope="col">Profesional</th> : null}
+           
           </tr>
         </thead>
         <tbody>{turns}</tbody>
