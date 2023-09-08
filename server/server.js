@@ -105,3 +105,29 @@ app.get('/api/CategoriasProducto/getCategoriasProducto/:type', (req, res) => {
 app.listen(port, () => {
   console.log(`API server is running at http://localhost:${port}`)
 })
+
+// endpoint to post turns
+
+app.post('/api/Turno/RegistrarTurno', (req, res) => {
+  const { id_tipo_usuario: idUserType, email } = req.body
+  const users = getAllItems()
+  const userType = USER_TYPES[idUserType] || USER_TYPES[1]
+  const lastUserId = users[users.length - 1]?.id || 0
+
+  const newUser = {
+    id: lastUserId + 1,
+    email,
+    tipo_usuario: userType,
+    familias_asignadas: null,
+    patentes_individuales_asignadas: null,
+    patentes_por_familia_asignadas: null
+  }
+
+  users.push(newUser)
+  saveItem(users)
+
+  res.status(201).json({
+    message: 'Usuario insertado exitosamente',
+    newUser
+  })
+})

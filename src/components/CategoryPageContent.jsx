@@ -7,7 +7,9 @@ import { useState } from 'react';
 
 const CategoryPageContent = ({ category }) => {
 
-  const [turnList, setTurnList] = useState([]); 
+  const [turnList, setTurnList] = useState(JSON.parse(localStorage.getItem("turns"))); 
+
+  const localTurns = localStorage.setItem("turns", JSON.stringify(turnList));
 
   const profesionalList = [
     {

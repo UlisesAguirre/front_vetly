@@ -4,9 +4,11 @@ import "./ViewTurns.css"
 import { useContext } from 'react';
 import { UserContext } from '../contexts/User';
 
-const ViewTurns = ({ turnList, setSection}) => {
+const ViewTurns = ({ setSection}) => {
 
-  const {user} = useContext(UserContext)
+  const {user} = useContext(UserContext);
+
+  const turnList = JSON.parse(localStorage.getItem("turns"));
 
   const sortedturns = user.type === "VETERINARIA" ?
     [...turnList].sort((a, b) => a.date.localeCompare(b.date))
