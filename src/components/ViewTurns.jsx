@@ -8,8 +8,8 @@ const ViewTurns = ({ setSection}) => {
 
   const {user} = useContext(UserContext);
 
-  const turnList = JSON.parse(localStorage.getItem("turns"));
-
+  const turnList = JSON.parse(localStorage.getItem("turns")) || []; 
+  
   const sortedturns = user.type === "VETERINARIA" ?
     [...turnList].sort((a, b) => a.date.localeCompare(b.date))
     :

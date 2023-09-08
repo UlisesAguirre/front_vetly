@@ -230,5 +230,29 @@
     "familias_asignadas": null,
     "patentes_individuales_asignadas": null,
     "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 30,
+    "email": "vete@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 31,
+    "email": "client@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
+  },
+  {
+    "id": 32,
+    "email": "client@gmail.com",
+    "tipo_usuario": "CLIENTE",
+    "familias_asignadas": null,
+    "patentes_individuales_asignadas": null,
+    "patentes_por_familia_asignadas": null
   }
 ]
